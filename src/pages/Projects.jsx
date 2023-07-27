@@ -1,10 +1,12 @@
 import React from 'react'
-import {motion } from 'framer-motion'
 import Transition from '../transition'
 import { Col, Row } from 'react-bootstrap'
 import { PROJECTS } from '../data/projectsdata'
+import { useNavigate } from 'react-router-dom';
+
 
 export default function Projects() {
+  const navigate = useNavigate();
   return (
     <div style={{width:"100%", overflow:"hidden"}}>
       <Transition>
@@ -20,10 +22,15 @@ export default function Projects() {
               </div>
               <div className='d-flex justify-content-center'>
                 <div className="btnClass mx-2 p-2">
-                  <a href={project.github} style={{textDecoration:"none",border:"none"}}>GITHUB</a>
+                <a href={project.github} onClick={() => {
+                    navigate('/Projects');
+                  }} style={{textDecoration:"none",border:"none"}}>GITHUB</a>
                 </div>
                 <div className="btnClass mx-2 px-3 py-2">
-                  <a href={project.livesite} style={{textDecoration:"none",border:"none"}}>SITE</a>
+                  <a href={project.livesite}  onClick={() => {
+                    navigate('/Projects');
+                  }}
+                   style={{textDecoration:"none",border:"none"}}>SITE</a>
                 </div>
               </div>
               

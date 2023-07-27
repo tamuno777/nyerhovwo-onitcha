@@ -488,9 +488,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
   flex-flow: row wrap;
   }
-  .colss{
-    /* flex-basis: 4%; */
-  }
+ 
 }
 @media only screen and (min-width: 270px) and (max-width: 410px) {
   .cols{
