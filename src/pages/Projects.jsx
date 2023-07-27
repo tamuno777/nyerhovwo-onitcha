@@ -3,6 +3,7 @@ import Transition from '../transition'
 import { Col, Row } from 'react-bootstrap'
 import { PROJECTS } from '../data/projectsdata'
 import { useNavigate } from 'react-router-dom';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 export default function Projects() {
@@ -16,7 +17,7 @@ export default function Projects() {
           {PROJECTS.map ((project) => (
             <Col  className='m-2 cad p-2' sm={12} lg={6} md={12} key={project.id} >
               <div><h1>{project.projectName}</h1></div>
-              <div>  <img src={project.projectImage} className='imgg' alt="" style={{width:"60%"}} /></div>
+              <div>  <LazyLoadImage src={project.projectImage} loading='lazy' className='imgg' alt="" style={{width:"60%"}} /></div>
               <div>
                 <p className='px-5'>{project.projectdescription}</p>
               </div>

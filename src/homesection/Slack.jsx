@@ -1,6 +1,7 @@
 import React from 'react'
 // import { div } from 'react-bootstrap'
 import { SLACKS } from '../data/Slackdata'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Slack() {
   return (
@@ -40,7 +41,7 @@ export default function Slack() {
                 <div className="tracker tr-25"></div>
                 <div id="card">
                 {/* <p id="prompt">HOVER OVER :D</p> */}
-                  <div className="title text-dark text-center pt-2"><img className='slackimg ' src={slack.slackImage} alt="" /> <p className='text-center my-3' style={{fontSize:"12px",fontWeight:"500"}}> {slack.slackName}</p></div>
+                  <div className="title text-dark text-center pt-2"><LazyLoadImage className='slackimg ' loading='lazy' src={slack.slackImage} alt="" /> <p className='text-center my-3' style={{fontSize:"12px",fontWeight:"500"}}> {slack.slackName}</p></div>
                  
                   
                 </div>
