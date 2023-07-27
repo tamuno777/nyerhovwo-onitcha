@@ -23,9 +23,12 @@ h5{
   width: fit-content;
   position: relative;
   height: 2.5em;
+  align-items: center !important;
+  text-align: center;
   border: 3px ridge #149CEA;
   outline: none;
-  background-color: black;
+  padding-top: 6px;
+  background-color: gray;
   color: white !important;
   /* color: white; */
   transition: 1s;

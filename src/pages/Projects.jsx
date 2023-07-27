@@ -25,13 +25,13 @@ export default function Projects() {
                 <div className="btnClass mx-2 p-2">
                 <a href={project.github} onClick={() => {
                     navigate('/Projects');
-                  }} style={{textDecoration:"none",border:"none"}}>GITHUB</a>
+                  }} style={{textDecoration:"none",border:"none",color:"white"}}>GITHUB</a>
                 </div>
                 <div className="btnClass mx-2 px-3 py-2">
                   <a href={project.livesite}  onClick={() => {
                     navigate('/Projects');
                   }}
-                   style={{textDecoration:"none",border:"none"}}>SITE</a>
+                   style={{textDecoration:"none",border:"none",color:"white"}}>SITE</a>
                 </div>
               </div>
               
