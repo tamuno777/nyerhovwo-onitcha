@@ -41,7 +41,7 @@ export default function Contact() {
 
 
   return (
-    <div className='py-5 text-light' style={{overflow:"hidden"}} >
+    <div className='py-5 text-light'  >
       <div className='d-flex justify-content-center'>
       <div></div>
       <div>
@@ -51,12 +51,12 @@ export default function Contact() {
       </div>
       <div>
       <Form onSubmit={handleSubmit}>
-     <div className='d-flex justify-content-center'>
-      <Form.Group className="mb-3 mx-1" controlId="exampleForm.ControlInput1">
+     <div className='d-flex justify-content-center control'>
+      <Form.Group className="mb-3 mx-1 control" controlId="exampleForm.ControlInput1">
           <Form.Label>Name</Form.Label>
-          <Form.Control type="text" placeholder="Enter your name" value={name} onChange={handleChangename}  />
+          <Form.Control  type="text" placeholder="Enter your name" value={name} onChange={handleChangename}  />
         </Form.Group>
-      <Form.Group className="mb-3 mx-1" controlId="exampleForm.ControlInput1">
+      <Form.Group className="mb-3 mx-1 control" controlId="exampleForm.ControlInput1">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="name@example.com" value={email} onChange={handleChangeemail} />
         </Form.Group>
@@ -66,7 +66,7 @@ export default function Contact() {
       <div>
       <Form.Group className="mb-3 " controlId="exampleForm.ControlTextarea1">
         <Form.Label>MESSAGE</Form.Label>
-        <Form.Control as="textarea" rows={5} style={{width:"430px"}} value={message} onChange={handleChangemessage} />
+        <Form.Control as="textarea" rows={5} style={{width:"330px"}} value={message} onChange={handleChangemessage} />
       </Form.Group>
       </div>
      </div>

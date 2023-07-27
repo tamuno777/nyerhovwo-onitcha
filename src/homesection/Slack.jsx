@@ -1,14 +1,14 @@
 import React from 'react'
-import { Col, Row } from 'react-bootstrap'
+// import { div } from 'react-bootstrap'
 import { SLACKS } from '../data/Slackdata'
 
 export default function Slack() {
   return (
     <div className='slack-container' style={{overflow:"hidden"}}>
       <div className="slack">
-        <Row>
+        <div className='d-flex justify-content-between cols'>
         {SLACKS.map ((slack) => (
-          <Col className='my-1' sm={4} lg={1} md={4} key={slack.id} >
+          <div className='my-1 colss ' sm={4} lg={1}key={slack.id} >
           
 
               <div  className="conts noselect">
@@ -49,10 +49,10 @@ export default function Slack() {
             {/* // <Items key={product.id} data = {product} /> */}
          
           
-          </Col>
+          </div>
                     ))}
 
-        </Row>
+        </div>
       </div>
     </div>
   )

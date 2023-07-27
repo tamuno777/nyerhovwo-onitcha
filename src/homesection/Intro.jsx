@@ -24,6 +24,11 @@ export default function Intro() {
       <div style={{fontSize:"12px",fontWeight:"bold",height:"fit-content",border:"none"}}  ><Navbutton title="EXPLORE PROJECTS" to="/Projects" /></div>
 
       </div>
+      <div className="social cols d-flex">
+        <a className='btnClass d-block m-1 py-1 px-3' href="https://twiter.com/niedavies?s=21">Twitter</a>
+        <a className='btnClass d-block m-2 py-1 px-3'  href="https://www.linkedin.com/in/winnie-davis-1aa069246">Linkdin</a>
+        <a className='btnClass d-block m-1 py-1 px-3'  href="https://github.com/tamuno777/">Github</a>
+      </div>
     </div>
   )
 }
