@@ -46,12 +46,12 @@ export default function Intro() {
 
       </div>
       <div className="social cols d-flex">
-        <a className='btnClass d-block m-2 py-1 px-3' href="https://twiter.com/niedavies?s=21"  onClick={() => {
+        <a className='btnClass d-block m-2 py-1 px-3' href="https://twitter.com/niedavies"  onClick={() => {
                     navigate('/Home');
                   }}>Twitter</a>
         <a className='btnClass d-block m-2 py-1 px-3'  href="https://www.linkedin.com/in/winnie-davis-1aa069246"  onClick={() => {
                     navigate('/Home');
-                  }}>Linkdin</a>
+                  }}>Linkedln</a>
         <a className='btnClass d-block m-2 py-1 px-3'  href="https://github.com/tamuno777/"  onClick={() => {
                     navigate('/Home');
                   }}>Github</a>
