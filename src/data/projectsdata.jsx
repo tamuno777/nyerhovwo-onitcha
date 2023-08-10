@@ -6,11 +6,22 @@ import foodie from '/assets/foodie.png'
 import snap from '/assets/snap.png'
 import weather from '/assets/weather.jpg'
 import git from '/assets/ggg.png'
+import odd from '/assets/oddpic.png'
+import chat from '/assets/chatimgg.png'
 
 
 export const PROJECTS = [
     {
       id: 1,
+      projectName: "ODD WORLD",
+      projectImage: odd,
+      projectdescription: "ODD.W is an event ticketing site which is built using react,paystack gateway and firbase..",
+      livesite:"https://oddworld.vercel.app/",
+      github: "https://github.com/tamuno777/oddworld"
+
+    },
+    {
+      id: 2,
       projectName: "JADA MINARA",
       projectImage: jade,
       projectdescription: "Jada.M is a lingerie e-commerce site which is built using react and react ui libraries,react-router..",
@@ -19,7 +30,7 @@ export const PROJECTS = [
 
     },
     {
-      id: 2,
+      id: 3,
       projectName: "DORA STUDIO",
       projectImage: dora,
       projectdescription: "Dora.S is a photo studio site which is built using react and react ui libraries,react-router..",
@@ -30,7 +41,18 @@ export const PROJECTS = [
 
     },
     {
-      id: 3,
+      id: 4,
+      projectName: "CHATX",
+      projectImage: chat,
+      projectdescription: "CHATX is a private chat app which is built using react and firebase (authentification included)",
+      livesite:"https://chatx-bams.vercel.app/",
+      github: "https://github.com/tamuno777/chatx"
+
+
+
+    },
+    {
+      id: 5,
       projectName: "EL REAL-ESTATES",
       projectImage: el,
       projectdescription: "el.RE is a Real estate site which is built using react and react ui libraries,react-router..",
@@ -38,7 +60,7 @@ export const PROJECTS = [
       github: "https://github.com/tamuno777/el-landingpage"
     },
     {
-      id: 4,
+      id: 6,
       projectName: "MINIMUM LIVING ",
       projectImage: homz,
       projectdescription: "This is a Real estate company site  which is built using React and react ui libraries,react-router...",
@@ -47,7 +69,7 @@ export const PROJECTS = [
 
     },
     {
-      id: 5,
+      id: 7,
       projectName: "FOODIE",
       projectImage: foodie,
       projectdescription: "This is a Resturant site  which is built using react and React and CSS",
@@ -56,7 +78,7 @@ export const PROJECTS = [
       
     },
     {
-      id: 6,
+      id: 8,
       projectName: "SNAP",
       projectImage: snap,
       projectdescription: "This is a one page potfolio sample site  which is built using react ",
@@ -64,7 +86,7 @@ export const PROJECTS = [
       github:"https://github.com/tamuno777/snap"
     },
     {
-      id: 7,
+      id: 9,
       projectName: "WEATHER",
       projectImage: weather,
       projectdescription: "This is a weather site built using react and API",
@@ -72,7 +94,7 @@ export const PROJECTS = [
       github:"https://github.com/tamuno777/weather"
     },
     {
-      id: 8,
+      id: 10,
       projectName: "MORE PROJECTS",
       projectImage: git,
       projectdescription: "Check more project on Github using JS, react and API",
