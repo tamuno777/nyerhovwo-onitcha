@@ -9,7 +9,7 @@ import git from '/assets/ggg.png'
 import odd from '/assets/oddpic.png'
 import chat from '/assets/chatimgg.png'
 import chat from '/assets/chatimgg.pn'
-import lomo from '/assets/lllo.png'
+import lomo from '/assets/lll0.png'
 
 
 export const PROJECTS = [
