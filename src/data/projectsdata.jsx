@@ -83,7 +83,7 @@ export const PROJECTS = [
       id: 8,
       projectName: "LOMO",
       projectImage: lomo,
-      projectdescription: "This is a single landing pagesample   which is built using html,css ",
+      projectdescription: "This is a single landing pagesample which is built using html,css ",
       livesite:"https://landing-j28r.vercel.app/",
       github:"https://github.com/tamuno777/landing"
     },
