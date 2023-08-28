@@ -8,6 +8,8 @@ import weather from '/assets/weather.jpg'
 import git from '/assets/ggg.png'
 import odd from '/assets/oddpic.png'
 import chat from '/assets/chatimgg.png'
+import chat from '/assets/chatimgg.pn'
+import lomo from '/assets/lllo.png'
 
 
 export const PROJECTS = [
@@ -79,6 +81,14 @@ export const PROJECTS = [
     },
     {
       id: 8,
+      projectName: "LOMO",
+      projectImage: lomo,
+      projectdescription: "This is a single landing pagesample   which is built using html,css ",
+      livesite:"https://landing-j28r.vercel.app/",
+      github:"https://github.com/tamuno777/landing"
+    },
+    {
+      id: 9,
       projectName: "SNAP",
       projectImage: snap,
       projectdescription: "This is a one page potfolio sample site  which is built using react ",
@@ -86,7 +96,7 @@ export const PROJECTS = [
       github:"https://github.com/tamuno777/snap"
     },
     {
-      id: 9,
+      id: 10,
       projectName: "WEATHER",
       projectImage: weather,
       projectdescription: "This is a weather site built using react and API",
@@ -94,7 +104,7 @@ export const PROJECTS = [
       github:"https://github.com/tamuno777/weather"
     },
     {
-      id: 10,
+      id: 11,
       projectName: "MORE PROJECTS",
       projectImage: git,
       projectdescription: "Check more project on Github using JS, react and API",
