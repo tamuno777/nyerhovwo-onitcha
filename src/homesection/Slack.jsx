@@ -1,5 +1,4 @@
 import React from 'react'
-// import { div } from 'react-bootstrap'
 import { SLACKS } from '../data/Slackdata'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -9,7 +8,7 @@ export default function Slack() {
       <div className="slack">
         <div className='d-flex justify-content-between cols'>
         {SLACKS.map ((slack) => (
-          <div className='my-1 colss ' sm={4} lg={1}key={slack.id} >
+          <div className='m-1 colss ' sm={4} lg={1}key={slack.id} >
           
 
               <div  className="conts noselect">

@@ -1,22 +1,49 @@
 h1 {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
-p , h5{
-  font-family: 'Cormorant Garamond', serif;
+.project-content h1 {
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  font-family: "Cormorant Garamond", serif;
 }
-h5{
+.project-content p {
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  text-align: left;
+
+}
+.project-content .tools {
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  color: white;
+}
+p,
+h5 {
+  font-family: "Cormorant Garamond", serif;
+}
+h5 {
   font-weight: bolder !important;
 }
-.banner{
-  background-image: url(/assets/nasa.jpg);
-  /* width: 100vw;  */
- /* height: 720px;  */
- background-blend-mode: color-burn;
- width: 100%;
- background-size: cover;
- background-repeat: no-repeat;
- background-position: center center;
- overflow: hidden;
+.cols {
+  flex-wrap: wrap;
+}
+.banner {
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+  background-blend-mode: color-burn;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
 }
 
 .btnClass {
@@ -25,12 +52,12 @@ h5{
   height: 2.5em;
   align-items: center !important;
   text-align: center;
-  border: 3px ridge #149CEA;
+  border: 3px ridge plum;
   outline: none;
   padding-top: 6px;
   background-color: gray;
   color: white !important;
-  /* color: white; */
+  font-family: "Cormorant Garamond", serif;
   transition: 1s;
   border-radius: 0.3em;
   font-size: 16px;
@@ -61,12 +88,13 @@ h5{
   transition: 0.5s;
 }
 
-.btnClass:hover::before, .btnClass:hover::after {
-  transform: scale(0)
+.btnClass:hover::before,
+.btnClass:hover::after {
+  transform: scale(0);
 }
 
 .btnClass:hover {
-  box-shadow: inset 0px 0px 25px #1479EA;
+  box-shadow: inset 0px 0px 25px plum;
 }
 
 /*works janky on mobile :<*/
@@ -100,9 +128,8 @@ h5{
   text-align: center;
   width: 100%;
 }
-.slackimg{
+.slackimg {
   width: 40px;
-
 }
 
 .title {
@@ -121,18 +148,6 @@ h5{
 .tracker ~ #card .title {
   opacity: 1;
 }
-
-/* #prompt {
-  bottom: 8px;
-  left: 12px;
-  z-index: 20;
-  font-size: 20px;
-  font-weight: bold;
-  transition: 300ms ease-in-out-out;
-  position: absolute;
-  max-width: 110px;
-  color: rgb(255, 255, 255);
-} */
 
 .tracker {
   position: absolute;
@@ -156,7 +171,7 @@ h5{
 
 .conts:hover #card::before {
   transition: 200ms;
-  content: '';
+  content: "";
   opacity: 80%;
 }
 
@@ -169,7 +184,8 @@ h5{
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
-  grid-template-areas: "tr-1 tr-2 tr-3 tr-4 tr-5"
+  grid-template-areas:
+    "tr-1 tr-2 tr-3 tr-4 tr-5"
     "tr-6 tr-7 tr-8 tr-9 tr-10"
     "tr-11 tr-12 tr-13 tr-14 tr-15"
     "tr-16 tr-17 tr-18 tr-19 tr-20"
@@ -177,7 +193,7 @@ h5{
 }
 
 #card::before {
-  content: '';
+  content: "";
   filter: blur(2rem);
   opacity: 30%;
   width: 100%;
@@ -185,12 +201,12 @@ h5{
   position: absolute;
   z-index: -1;
   transition: 200ms;
-background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .tr-1 {
@@ -420,33 +436,34 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 .noselect {
   -webkit-touch-callout: none;
-   /* iOS Safari */
+  /* iOS Safari */
   -webkit-user-select: none;
-   /* Safari */
-   /* Konqueror HTML */
+  /* Safari */
+  /* Konqueror HTML */
   -moz-user-select: none;
-   /* Old versions of Firefox */
+  /* Old versions of Firefox */
   -ms-user-select: none;
-   /* Internet Explorer/Edge */
+  /* Internet Explorer/Edge */
   user-select: none;
-   /* Non-prefixed version, currently
+  /* Non-prefixed version, currently
 									supported by Chrome, Edge, Opera and Firefox */
 }
 .cad {
   box-sizing: border-box;
-  width:30% !important;
-  height:300px ;
+  width: 30% !important;
+  height: 300px;
   background: rgba(217, 217, 217, 0.58);
-  border: 1px solid white;
+  border: 3px solid plum;
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(6px);
   border-radius: 17px;
   text-align: center;
   cursor: pointer;
   transition: all 0.5s;
-  display: block;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   user-select: none;
   font-weight: bolder;
   color: black;
@@ -461,56 +478,49 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   transform: scale(0.95) rotateZ(1.7deg);
 }
 
-
 @media only screen and (min-width: 999px) and (max-width: 1024px) {
-  .cad{
+  .cad {
     display: block !important;
     width: 60% !important;
-    height: 350px;
+    height: auto;
   }
 }
 @media only screen and (min-width: 759px) and (max-width: 913px) {
-  .cad{
+  .cad {
     display: block !important;
     width: 70% !important;
-    height: 350px;
+    height: auto;
   }
 }
 @media only screen and (min-width: 411px) and (max-width: 600px) {
-  .cad{
+  .cad {
     display: block !important;
     width: 90% !important;
-    height: 300px;
+    height: auto;
   }
-  .control{
+  .control {
     display: block !important;
-
-    
   }
-  .cols{
+  .cols {
     display: flex;
-  flex-flow: row wrap;
+    flex-flow: row wrap;
   }
- 
 }
 @media only screen and (min-width: 270px) and (max-width: 410px) {
-  .cols{
+  .cols {
     display: flex;
-  flex-flow: row wrap;
+    flex-flow: row wrap;
   }
   /* .colss{
     flex-basis: 100%;
   } */
- 
-  .cad{
+
+  .cad {
     display: block !important;
     width: 90% !important;
-    height: 300px;
+    height: auto;
   }
-  .control{
+  .control {
     display: block !important;
-
-    
   }
- 
 }
