@@ -1,16 +1,13 @@
-h1 {
-  font-family: "Dancing Script", cursive;
-}
+
 .project-content h1 {
   font-size: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   color: white;
-  font-family: "Cormorant Garamond", serif;
 }
 .project-content p {
-  font-size: 15px;
+  font-size: 13px;
   display: flex;
   flex-wrap: wrap;
   color: white;
@@ -24,10 +21,7 @@ h1 {
   text-align: left;
   color: white;
 }
-p,
-h5 {
-  font-family: "Cormorant Garamond", serif;
-}
+
 h5 {
   font-weight: bolder !important;
 }
