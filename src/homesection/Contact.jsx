@@ -21,21 +21,7 @@ export default function Contact() {
     setMessage(event.target.value);
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   const data = {
-  //     name,
-  //     email,
-  //     message,
-  //   };
-  //   const template = "template_a7dcx6g"
-  //   const service = "service_u9i0dtg"
-  //   const publickey = "H6dc0_UA1aonjman4"
 
-  //   // Send the data to your email using an email service provider, such as SendGrid or Mailchimp.
-  //   emailjs.send(service, template, data, publickey);
-
-  // }
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
